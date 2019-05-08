@@ -80,7 +80,8 @@
 
 .grid-topics {
     display: grid;
-    grid-template-columns: repeat(4, minmax(1fr, auto));
+    /* grid-template-columns: repeat(4, minmax(1fr, auto)); */
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-template-rows: repeat(2, minmax(1fr, auto));
     grid-row-gap: 0.5em;
     grid-column-gap: 1em;
@@ -182,6 +183,34 @@
     height: 30vh;
 }
 
+.grid-subscribe {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr) 30%;
+}
+.input-sub input{
+    padding: 10px auto;
+}
+.sub-btn a {
+    color: #fff;
+}
+
+.sub-btn {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    border: 1px solid #fff;
+    width: 50%;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-sub {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    /* margin: 0 auto; */
+}
 /*ARTICLE*/
 .article {
     grid-area: article;
